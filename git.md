@@ -24,13 +24,32 @@ git init
 ## git status
 => kiểm tra sự thay đổi của các file trong dự án
 
-## git add =>thêm một file vào trong staging
-## git add . => thêm all các file ở trong THƯ MỤC hiện tại trong staging
-## git add -A => thêm all các file ở trong DỰ ÁN trong staging
-## git add<đường dẫn file> => chỉ thêm file CỤ THỂ vào trong staging
+## git add 
+=>thêm một file vào trong staging
+## git add . 
+=> thêm all các file ở trong THƯ MỤC hiện tại đang đứng trong staging tại thời điểm hiện tại
+## git add -A 
+=> thêm all các file ở trong DỰ ÁN dù bạn đag đứng đâu trong staging
+## git add<đường dẫn file> 
+=> chỉ thêm file CỤ THỂ vào trong staging
 
 + có 2 khu vực khi chạy git status
   - working directory(file màu đỏ) => ko đưa đc lên git
   - staging(file màu xanh) => đưa đc lên git
 
-## git comt
+## config git (chạy duy nhất 1 lần)
+git config --global user.name "anhbig"
+git config --global user.email "nguyenanbi300303@gmail.com"
+
+## git commit -m "message" (bắt buộc trc khi đưa file)
+=> gắn đc những file đang nằm staging
+=> dùng để gắn message(mô tả) vào trong những file đc phép đưa lên git
+=> mỗi comit có 1 mã sha(id) phân biệt comit vs nhau
+
+## git log
+=> kiểm tra lịch sử commit
+
++ Đưa nooij dung lên GIT
+## git push -u origin tên nhánh
+=> đưa code lên git
+=> từ lần push code t2: git push
