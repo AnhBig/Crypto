@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- SLICK CSS -->
+     <link rel="stylesheet" href="./lib/slick/slick.css">
+
+    <!-- SLICK CSS THEME -->
+     <link rel="stylesheet" href="./lib/slick/slick-theme.css">
+
     <!-- nhúng CSS tailwin sau khi watch -->
     <link rel="stylesheet" href="./output.css">
 </head>
@@ -123,7 +129,90 @@
        </section>
 
        <!-- FEEBACK -->
-        <section id="feeback"></section>
+        <section id="feeback" class="my-40">
+            <div class="container text-white text-center ">
+                <p class="text-xl text-[#9CA3AF]">Feedback</p>
+                <h2 class="text-6xl mt-8 mb-14">Trsuted by <span class="bg-gradient-to-r from-[#FF5EA3] to-[#FEA7A9] bg-clip-text text-transparent">Clients</span></h2>
+            </div>
+           
+           <div class="fee-list">
+             <div class="fee-item">
+                <div class="p-8 bg-[#44475F] mx-5">
+                   <div>
+                    <img src="./assets/img/kanban.png" alt="">
+                   </div>
+                   <ul class="text-[#EAB308] flex">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                   </ul>
+                   <p class="text-white mt-6 text-2xl">Certainly from my perspective quis been a great success with due WP giving us that
+                    enterprises level
+                    assured quality.</p>
+                   <p class="text-white mt-6 font-bold">Qulaity & Cost: 
+                    <span class="text-[#9CA3AF]">15.00</span>
+                   </p>
+                </div>
+                <div class="p-8 bg-[#44475F] mx-5">
+                   <div>
+                    <img src="./assets/img/aven.png" alt="">
+                   </div>
+                   <ul class="text-[#EAB308] flex">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                   </ul>
+                   <p class="text-white mt-6 text-2xl">Certainly from my perspective quis been a great success with due WP giving us that
+                    enterprises level
+                    assured quality.</p>
+                   <p class="text-white mt-6 font-bold">Qulaity & Cost: 
+                    <span class="text-[#9CA3AF]">15.00</span>
+                   </p>
+                </div>
+                <div class="p-8 bg-[#44475F] mx-5">
+                   <div>
+                    <img src="./assets/img/fox.png" alt="">
+                   </div>
+                   <ul class="text-[#EAB308] flex">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                   </ul>
+                   <p class="text-white mt-6 text-2xl">Certainly from my perspective quis been a great success with due WP giving us that
+                    enterprises level
+                    assured quality.</p>
+                   <p class="text-white mt-6 font-bold">Qulaity & Cost: 
+                    <span class="text-[#9CA3AF]">15.00</span>
+                   </p>
+                </div>
+                <div class="p-8 bg-[#44475F] mx-5">
+                   <div>
+                    <img src="./assets/img/goldline.png" alt="">
+                   </div>
+                   <ul class="text-[#EAB308] flex">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                   </ul>
+                   <p class="text-white mt-6 text-2xl">Certainly from my perspective quis been a great success with due WP giving us that
+                    enterprises level
+                    assured quality.</p>
+                   <p class="text-white mt-6 font-bold">Qulaity & Cost: 
+                    <span class="text-[#9CA3AF]">15.00</span>
+                   </p>
+                </div>
+                
+             </div>
+           </div>
+        </section>
 
         <!-- FOOTER -->
          <footer class="mt-20">
@@ -164,6 +253,35 @@
                 </div>
          </footer>
     </main>
+
+    <!-- JQUERY -->
+     <script src="./js/jquery-1.11.0.min.js"></script>
+
+    <!-- SLICK CSS -->
+     <script src="./lib/slick/slick.min.js"></script>
     
+     <script>
+        $('.fee-item').slick({
+         infinite: true,
+
+         //số lượng item hiển thị
+         slidesToShow: 3,
+         
+         // số lượng change khi scroll
+         slidesToScroll: 2,
+
+         //Ẩn hiện mũi tên next or prev item
+         arrows: true,
+
+         //tự động chuyển slide
+         autoplay: true,
+
+         //time chuyển đổi slideitem
+         autoplaySpeed: 2000,
+
+        // hiển thị dot
+        dots: true,
+       });
+     </script>
 </body>
 </html>

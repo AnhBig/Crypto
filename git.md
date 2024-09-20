@@ -53,3 +53,52 @@ git config --global user.email "nguyenanbi300303@gmail.com"
 ## git push -u origin tên nhánh
 => đưa code lên git
 => từ lần push code t2: git push
+
+<!-- ĐƯA FILE từ Staging về working -->
+## git reset
+
+## git restore -s. 
+=> đưa all các file đg ở staging về working
+
+## git restore -s <url file>
+=> chỉ đưa duy nhất file về working
+
+<!--  -->
+## git checkout (url file)
+=> 1. Đưa file đang đc chỉnh sửa về trc khi chỉnh sửa
+
+## git checkout -b <tên nhánh>
+=> tương đương 2 lệnh git branch + git switch
+
+## git checkout <tên nhánh>
+=> tương đương vs lệnh git switch
+=> dùng để chuyển qua <tên nhánh>
+
+
+<!-- Làm vc vs NHÓM -->
+## branch
+// dev => kthu QA và Dev (dev)
+//staging => QA kthu 1 lần (staging)
+//ptoduction => end user (main/release)
+
++ git branch <tên nhánh>
+=> tạo ra 1 nhánh mới
+=> nhánh mới sẽ chứa toàn bộ code của nhánh đang dùng
+
++ git branch -a or git branch
+=> liệt kê all các branch đg có trong report (nhấn Q thoát khỏi ds branch)
+
++ git switch <tên nhánh>
+=> chuyển qua nhanh <tên nhánh>
+
+<!-- LẤY CODE -->
++ git pull
+=> pull toàn bộ code ở git về source code
+
+<!-- bị lõi khi dùng git pull -->
++ git pull --no-ff
+=>
+
+<!-- LẤY 1 SOURCE CODE TRÊN GIT -->
+## git clone <url link>
+=> Dùng để clone source code của 1 fit bất kì
